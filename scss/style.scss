@@ -1,0 +1,104 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'about.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+/* FOOD SECTION*/
+
+.food {
+    background: $color-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 10px;
+
+  hr {
+        color: #ffff;
+        width: 15%;
+        height: 2px;
+        margin-bottom: 100px;
+    }
+
+    &__title {
+        color: #ffff;
+        font-weight: 700;
+        font-size: 50px;
+        align-self: center;
+    }
+
+    &__card__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    &__card {
+        width: 30%;
+        background: #fcfcfc;
+        box-shadow: 5px 5px 5px 0px rgba(110, 110, 110, 0.75);
+        transition: 2s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+        
+    }
+    
+    
+     img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    &__card__content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+        b {
+            align-self: flex-end;
+            font-size: 20px;
+        }
+        
+    }
+    
+    &__card__paragraph {
+        color: #6e6e6e;
+        padding: 15px 0px;
+    }
+    
+
+    &__card__button {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 20px;
+    }
+}
+
+
+/*FOOTER SECTION*/
+
+footer {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+
+    h4 {
+        color: $color-bg;
+    }
+    
+}
+
